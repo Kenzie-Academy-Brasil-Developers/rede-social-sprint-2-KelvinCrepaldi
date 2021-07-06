@@ -14,10 +14,13 @@
 	<!-- FAVICON -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
+	<!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/5dcc05f3d1.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 	<!-- CABEÇALHO -->
-	<header>
+	<header class="center-responsive top-logo">
 		<a href="https://www.instagram.com/" class="instagram-logo">
 			<figure>
 				<img src="img/logo.png" alt="Instagram logo">
@@ -26,7 +29,7 @@
 	</header>
 
 	<!-- CONTEÚDO DA PÁGINA -->
-	<main>
+	<main class="center-responsive">
 
 		<!-- CONTEÚDO SOBRE O USUÁRIO -->
 		<article class="profile-content">
@@ -40,7 +43,7 @@
 
 			<!-- DETALHES/INFORMAÇÕES DO USUÁRIO -->
 			<section class="profile-info">
-				<h1>kenzieacademybr</h1>
+				<h1 class="profile-username">kenzieacademybr</h1>
 
 				<!-- POSTS/SEGUIDORES/SEGUINDO -->
 				<div class="profile-data">
@@ -50,7 +53,7 @@
 				</div>
 
 				<h2> Kenzie Academy Brasil </h2>
-				<ul>
+				<ul class="profile-description">
 					<li>
 						<p>Nós investimos em você. Aprenda programação sem mensalidade até conseguir uma remuneração de pelo menos R$3.000 por mês.</p>
 					</li>
@@ -63,6 +66,8 @@
 				</ul>
 			</section>
 		</article>
+
+		<div class="line"></div>
 
 		<!-- DESTAQUES DO USUÁRIO -->
 		<article class="highlighted-stories">
@@ -82,14 +87,15 @@
 			</ul>
 		</article>
 
+
 		<!-- POSTS DO USUÁRIO -->
-		<article class="profile-posts">
+		<article class="profile-posts class="center-responsive"">
 
 			<!-- MENU DE POSTS -->
 			<nav>
-				<a href="#">Posts</a>
-				<a href="#">Igtv</a>
-				<a href="#">Tagged</a>
+				<a href="#"><i class="fas fa-th"></i> Posts</a>
+				<a href="#"><i class="fas fa-tv"></i> Igtv</a>
+				<a href="#"><i class="fas fa-tags"></i> Tagged</a>
 			</nav>
 
 			<!-- LISTA DE POSTS -->
@@ -153,7 +159,7 @@
 	</main>
 
 	<!-- RODAPÉ -->
-	<footer>
+	<footer >
 
 		<!-- MENU RODAPÉ -->
 		<nav class="footer-nav">

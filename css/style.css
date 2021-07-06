@@ -14,6 +14,27 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 */
 
+html, main, 
+body,
+figure,
+div,
+input,
+textarea,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+}
+
 /* VARIÁVEIS */
 :root{
   
@@ -21,12 +42,15 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 body{
-
+	font-family: Helvetica, Arial, sans-serif;;
+	color: #262626;
+	background-color: rgb(243, 243, 243)
 }
 
 /*TOPO*/
 header{
-	
+	display: flex;
+	justify-content: center;
 }
 
 /*RODAPÉ*/
@@ -34,18 +58,287 @@ footer{
 
 }
 
+.center-responsive{
+	margin: 0 auto;
+	width: auto;
+}
+
+.line{
+	border-top:1px solid rgba(0, 0, 0, 0.11) ;
+	width: 80%;
+	margin: 10px auto 20px;
+}
+
 /*PÁGINA INICIAL*/
 main{
 	
-}
-	main .profile-content{
+}	
 
+.top-logo{
+	padding-top: 15px;
+}
+
+	/*============== Profile =================*/
+	main .profile-content{
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+		width: wrap;
+		flex-direction: column;
 	}
+
+	.profile-photo {
+		display: flex;
+		width: auto;
+		justify-content: center;
+	}
+
+	.profile-photo img{
+		border-radius: 100px;
+		border: 1px grey solid;
+		padding: 5px;
+	}
+
+	
+	
+	.profile-info{
+		justify-content: center;
+		text-align: center;
+		width: auto;
+		
+	}
+
+	.profile-username{
+		font-size: 24px;
+		margin-bottom: 5px;
+		text-shadow: 0px 1px 1px #00000031;
+	}
+
+	.profile-data{
+		display: flex;
+		font-size: 15px;
+		justify-content: space-evenly;
+		margin-bottom: 20px;
+		padding: 5px;
+		max-width: 425px;
+		margin: 0 auto;
+	}
+
+	.profile-data span{
+		font-weight: bolder;
+	}
+
+	.profile-info h2{
+		font-size: 17px;
+		font-weight: bolder;
+		margin-bottom: 3px;
+		margin-top:5px;
+		text-shadow: 0px 1px 1px #00000031;
+		
+	}
+
+	.profile-description p, .profile-description a{
+		font-size: 15px;
+		max-width: 500px;
+		margin: 0 auto;
+		text-shadow: 1px 1px 1px #00000031;
+		
+	}
+
+	.profile-description a{
+		text-decoration: none;
+		font-weight: 550;
+	}
+
+	/*============== Highlight ===============*/
 
 	main .highlighted-stories{
-
+		margin: 0 auto;
+		max-width: 768px;
+		margin-bottom: 20px;
+		text-shadow: 1px 1px 1px #00000031;
 	}
+
+	main .highlighted-stories ul{
+		
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.highlighted-stories figure{
+		margin: 10px;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	main .highlighted-stories figure img{
+
+		width: 77px;
+		height: 77px;
+		border-radius: 200px;
+		border: 1px rgba(128, 128, 128, 0.301) solid;
+		padding: 3px;
+	}
+
+	
+
+	/*============== Posts ===================*/
 
 	main .profile-posts{
-
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
+
+	main .profile-posts nav{
+		width:100%;
+		text-align: center;
+		border-top:1px solid rgba(0, 0, 0, 0.11) ;
+		text-shadow: 1px 1px 1px #00000031;
+	}
+
+	main .profile-posts nav a{
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: 600;
+		text-decoration: none;
+		color: grey;
+		padding: 7px;
+		padding-top: 10px;
+		width: 90px;
+		border-top: 1px solid transparent;
+	}
+
+	main .profile-posts ul{
+		padding-top: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	main .profile-posts ul li{
+		margin: 10px;
+		width: 293px;
+		height: 293px;
+		
+	}
+
+	main .profile-posts ul li a figure img{
+		width: 100%;
+		height: 100%;
+		-webkit-box-shadow: 0px 1px 8px 4px rgba(0, 0, 0, 0.151); 
+		box-shadow: 4px 5px 8px 4px rgba(0, 0, 0, 0.151);
+	}
+
+	/* ===============Footer=============== */
+
+	footer{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		
+		
+	}
+	
+	.footer-nav{
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 40px;
+		margin: 30px;
+		text-align: center;
+	}
+	
+	.copyright{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+		text-shadow: 2px 2px 1px #00000031;
+	}
+	
+	.footer-nav a{
+		padding: 5px 10px;
+		text-decoration: none;
+		color: grey;
+		font-weight: bold;
+		text-shadow: 0, 0 black;
+		text-shadow: 2px 2px 1px #00000031;
+	}
+
+
+/* ===========  MOBILE ================== */
+
+
+
+@media (min-width: 968px){
+
+	.center-responsive{
+		width: 968px;
+	}
+
+	.line{
+		border-bottom: none;
+		width: 0;
+		margin:0;
+		margin-top: 20px;
+		border: none;
+	}
+	
+	/* == Profile == */
+	header{
+		justify-content: flex-start;
+		padding-left: 20px;
+	}
+
+	main .profile-content{
+		flex-direction: row;
+	}
+
+	.profile-info{
+		text-align: left;
+		margin-left: 80px;
+	}
+
+	.profile-username{
+		font-size: 30px;
+		font-weight: 530;
+	}
+
+	.profile-data{
+		display: flex;
+		margin: 0;
+		margin-bottom:10px;
+		justify-content: left;
+		padding: 0;
+	}
+
+	.profile-data p{
+		margin-right: 30px;
+	}
+	
+	/* == highlight ==*/
+
+	main .highlighted-stories{
+		padding-bottom: 30px;
+	}
+
+	main .highlighted-stories ul{
+		
+		justify-content: left;
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	.highlighted-stories figure{
+		cursor: pointer;
+	}
+
+	/* == posts ==*/
+
+	main .profile-posts nav a:hover{
+		cursor:pointer;
+		border-top: 1px rgb(0, 0, 0) solid;
+	}
+
+}
