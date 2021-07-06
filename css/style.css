@@ -168,7 +168,6 @@ main{
 	}
 
 	.highlighted-stories figure{
-		margin: 10px;
 		flex-direction: column;
 		text-align: center;
 	}
@@ -179,7 +178,7 @@ main{
 		height: 77px;
 		border-radius: 200px;
 		border: 1px rgba(128, 128, 128, 0.301) solid;
-		padding: 3px;
+
 	}
 
 	
@@ -216,13 +215,15 @@ main{
 		padding-top: 20px;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-between;
+		align-content: space-between;
 	}
 
 	main .profile-posts ul li{
-		margin: 10px;
+	
 		width: 293px;
 		height: 293px;
+		padding-bottom: 30px;
 		
 	}
 
