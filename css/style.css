@@ -75,7 +75,9 @@ main{
 }	
 
 .top-logo{
+	
 	padding-top: 15px;
+
 }
 
 	/*============== Profile =================*/
@@ -141,7 +143,6 @@ main{
 		font-size: 15px;
 		max-width: 500px;
 		margin: 0 auto;
-		text-shadow: 1px 1px 1px #00000031;
 		
 	}
 
@@ -271,10 +272,10 @@ main{
 
 
 
-@media (min-width: 968px){
+@media (min-width: 935px){
 
 	.center-responsive{
-		width: 968px;
+		width: 935px;
 	}
 
 	.line{
@@ -288,7 +289,6 @@ main{
 	/* == Profile == */
 	header{
 		justify-content: flex-start;
-		padding-left: 20px;
 	}
 
 	main .profile-content{
